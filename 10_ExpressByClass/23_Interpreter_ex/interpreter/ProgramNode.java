@@ -12,6 +12,10 @@ public class ProgramNode extends Node {
         commandListNode.parse(context);
     }
 
+    public Node getNode() {
+        return commandListNode;
+    }
+
     @Override
     public String toString() {
         return "[program "+ commandListNode + "]" ;

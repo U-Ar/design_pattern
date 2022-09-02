@@ -1,7 +1,5 @@
 package interpreter;
 
-import java.util.*;
-
 public class Context {
     private String[] tokens;
     private String lastToken;

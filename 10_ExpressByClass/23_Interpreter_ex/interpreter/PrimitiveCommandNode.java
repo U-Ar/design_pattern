@@ -13,6 +13,10 @@ public class PrimitiveCommandNode extends Node {
     public void parse(Context context) throws ParseException {
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override 
     public String toString() {
         return name;

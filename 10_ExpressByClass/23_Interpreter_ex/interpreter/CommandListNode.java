@@ -4,8 +4,9 @@ import visitor.Visitor;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class CommandListNode extends Node {
+public class CommandListNode extends Node implements Iterable<Node> {
     private List<Node> list = new ArrayList<>();
     
     @Override 
@@ -27,6 +28,11 @@ public class CommandListNode extends Node {
     @Override
     public String toString() {
         return list.toString();
+    }
+
+    @Override 
+    public Iterator<Node> iterator() {
+        return list.iterator();
     }
 
     @Override 

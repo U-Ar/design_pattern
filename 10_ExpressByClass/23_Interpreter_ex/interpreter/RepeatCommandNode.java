@@ -15,6 +15,14 @@ public class RepeatCommandNode extends Node {
         commandListNode.parse(context);
     }
 
+    public int getNumber() {
+        return number;
+    }
+
+    public Node getNode() {
+        return commandListNode;
+    }
+
     @Override 
     public String toString() {
         return "[repeat " + number + " " + commandListNode + "]";
